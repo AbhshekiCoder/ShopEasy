@@ -1,16 +1,12 @@
 # ShopEasy
 A complete e-commerce payment solution with Stripe Checkout, order management, and webhook handling.
 
-https://i.imgur.com/JQZ0w0E.png (Add your own screenshot here)
+
 
 Features
 💳 Stripe Checkout Integration
 
-📦 Order management system
-
 🔔 Real-time payment status updates via webhooks
-
-📧 Email confirmation support
 
 ✅ Success & failure pages
 
@@ -19,7 +15,6 @@ Features
 Tech Stack
 Frontend:
 
-Next.js
 
 React
 
@@ -61,10 +56,10 @@ Set up environment variables:
 Create a .env file in the root directory with the following:
 
 text
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=your_webhook_signing_secret
-MONGODB_URI=your_mongodb_connection_string
-FRONTEND_URL=http://localhost:3000
+PORT=3000
+MONGODBURL=mongodb://localhost:27017/e-commerce
+STRIPE_SECRET_KEY=sk_test_51PauGq2Lcv7rdblxkMWS7M7aqUjmo0G83boutsqjNAvmzmv6TINlj3kvekfAhVjClyYjIWwf19KiSKwHL1Q9qA3P00FqBeVHYb
+STRIPE_WEBHOOK_SECRET=we_1RY1kQ2Lcv7rdblxloW8lxcA
 Run the development server:
 
 bash
@@ -75,7 +70,7 @@ Get your API keys from the Stripe Dashboard
 
 Set up webhooks in the Stripe Dashboard:
 
-Endpoint URL: https://yourdomain.com/api/payments/webhook
+Endpoint URL: https://4909-103-82-99-55.ngrok-free.app/api/payment/webhook
 
 Events to listen for:
 
